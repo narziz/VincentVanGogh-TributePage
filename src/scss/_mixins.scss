@@ -1,0 +1,14 @@
+@mixin paralellax {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+@mixin underline {
+  height: 0.3em;
+  background-color: $secondary-light;
+  border: none;
+  border-radius: 1rem;
+  width: calc(100% - 20%);
+}

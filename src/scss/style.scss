@@ -1,0 +1,247 @@
+@import "resets";
+@import "variables";
+@import "mixins";
+@import "animations";
+
+@font-face {
+  font-family: 'MarkProRegular';
+  src: url('../font/MARKPRO.woff') format('woff');
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: 'MarkProBold';
+  src: url('../font/MARKPROBOLD.woff') format('woff');
+}
+
+@font-face{
+  font-family: 'Aclonica';
+  src: url('../font/Aclonica-Regular.woff') format('woff');
+  font-weight: normal;
+}
+
+// --------- TYPOGRAPHY----------
+body, html{
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.banner-title,
+.section-title{
+  font-family: 'Aclonica', sans-serif;
+}
+.tagline,
+.his-life-parag,
+span{
+  font-family: 'MarkProRegular', sans-serif;
+}
+.banner-title-cont,
+.section-title-cont{
+  text-align: center;
+}
+
+.banner-title-cont{
+  color: $primary;
+  padding: 0rem 1rem;
+
+  .banner-title{
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    text-shadow: 1px 1px 2px $black;
+  }
+
+  .tagline{
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 1px 1px 2px $black;
+  }
+}
+.section-title-cont{
+  color: $secondary;
+}
+
+.section-title{
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
+
+.his-life-cont{
+  .his-life-parag{
+    line-height: 1.6;
+    text-align: justify;
+  }
+}
+// --------- LAYOUT----------
+body, html{
+  height:100%;
+}
+main{
+  background-color: lighten($primary, 10%);
+  img{
+    border-radius: 1em;
+  }
+}
+.banner-paralellax{
+  width: 100%;
+  height: 100vh;
+  background-image: url("/dist/img/cover.jpg");
+  @include paralellax;
+}
+
+.quote-paralellax{
+    width: 100%;
+    height: 80vh;
+    background-image: url("/dist/img/quote.jpg");
+    @include paralellax;
+}
+
+
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+.container-fluid {
+  .container:first-child{
+    width: 100%;
+  }
+}
+
+
+#his-life-sec,
+#paintings-sec{
+    .underline{
+      @include underline;
+    }
+}
+.section-title-cont{
+  margin-bottom: 2rem;
+}
+
+.his-life-cont{
+  display: flex;
+  flex-direction: column-reverse;
+
+  .left-side,
+  .right-side{
+    width: 100%;
+    padding: 0;
+  }
+  .right-side{
+    margin-bottom: 1.5rem;
+    height: 15rem;
+  }
+
+  img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+  }
+}
+
+
+#img-div{
+  text-align: end;
+  color: $graytext;
+}
+// ---quote section---
+#quote-sec{
+  color: $primary;
+
+  .center{
+    flex-direction: column;
+  }
+  span:nth-child(2){
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  span:first-child{
+    font-family: none;
+    font-size: 6rem;
+  }
+  span:last-child{
+    font-size: 1.3rem;
+  }
+}
+
+// ---paintings section---
+.paintings-cont{
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+    height: fit-content;
+  }
+  .col{
+    width: 100%;
+    height: 15rem;
+    color: $graytext;
+  }
+  img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+  }
+}
+
+#his-life-sec,
+#quote-sec,
+#paintings-sec{
+  padding: 3em 0em;
+}
+#read-more{
+  height: 15em;
+  background-color: $secondary-light;
+  color: $secondary;
+
+  .container{
+    flex-direction: column;
+  }
+  .center{
+    justify-content: center;
+  }
+  span{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  a{
+    text-decoration: none;
+    color: $primary;
+  }
+  button{
+    background-color: $secondary;
+    border: none;
+    padding: 1em 5em;
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+}
+
+// ---footer---
+#footer{
+  background: $secondary;
+  color: $secondary-light;
+  height: fit-content !important;
+
+  .footer-span{
+    padding: 1rem;
+  }
+
+  .author{
+    color: $primary;
+  }
+}
+
+// --------- GENERAL CLASSES----------
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.back-filter{
+  backdrop-filter: brightness(0.5);
+}
+
+@import "mediaquery";
