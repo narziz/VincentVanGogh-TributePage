@@ -1,5 +1,5 @@
 {
-  "name": "vincent van gogh",
+  "name": "vincent-van-gogh",
   "version": "1.0.0",
   "description": "a tribute page for freeCodeCamp.org",
   "main": "index.js",
@@ -13,6 +13,8 @@
     "aos": "^2.3.4",
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-image": "^6.2.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.1.0"
   }
