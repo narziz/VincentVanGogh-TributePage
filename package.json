@@ -1,13 +1,13 @@
 {
-  "name": "vincent",
+  "name": "vincent van gogh",
   "version": "1.0.0",
-  "description": "",
+  "description": "a tribute page for freeCodeCamp.org",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp"
   },
-  "author": "",
+  "author": "narziz",
   "license": "ISC",
   "dependencies": {
     "aos": "^2.3.4",
