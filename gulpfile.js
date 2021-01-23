@@ -35,4 +35,4 @@ function watchTasks(){
 };
 
 exports.sass = sassToCss;
-exports.watch = series(sassToCss, imageMinify, copyFont, watchTasks);
+exports.default = series(sassToCss, imageMinify, copyFont, watchTasks);
