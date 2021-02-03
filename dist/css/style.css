@@ -133,7 +133,7 @@ main {
 .banner-paralellax {
   width: 100%;
   height: 100vh;
-  background-image: url("/dist/img/cover.jpg");
+  background-image: url("../img/cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -142,7 +142,7 @@ main {
 .quote-paralellax {
   width: 100%;
   height: 80vh;
-  background-image: url("/dist/img/quote.jpg");
+  background-image: url("../img/quote.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
