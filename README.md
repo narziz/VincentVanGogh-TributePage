@@ -47,4 +47,4 @@ $ npm install
 # Start development server
 $ npm start
 ```
-Once your server has started, it will automatically open in your browser in `http://localhost:8080/` url and you will see the website running on a Development Server.
+Once your server has started, it will automatically open in your browser and you will see the website running on a Development Server.
